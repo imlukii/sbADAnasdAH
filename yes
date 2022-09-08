@@ -1,0 +1,1301 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local BiwareSellersGUI = Instance.new("ScreenGui")
+local Warning = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Yes = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local MainFrame = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local Pages = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local HomePage = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Viewport = Instance.new("ImageLabel")
+local UICorner_6 = Instance.new("UICorner")
+local Username = Instance.new("TextLabel")
+local Stuff = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local CopyDiscord = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local CopyGroup = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local MainPage = Instance.new("Frame")
+local Title_2 = Instance.new("TextLabel")
+local Stuff_2 = Instance.new("Frame")
+local UICorner_10 = Instance.new("UICorner")
+local FlyButton = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local DestroymapButton = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local Other = Instance.new("Frame")
+local UICorner_13 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local TeleportsPage = Instance.new("Frame")
+local Title_3 = Instance.new("TextLabel")
+local Stuff_3 = Instance.new("Frame")
+local UICorner_14 = Instance.new("UICorner")
+local GOTO = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local AdminButton = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local BankButton = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local BasketButton = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local SZButton = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local TextBox = Instance.new("TextBox")
+local UICorner_20 = Instance.new("UICorner")
+local TrainButton = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
+local GraveButton = Instance.new("TextButton")
+local UICorner_22 = Instance.new("UICorner")
+local SellingPage = Instance.new("Frame")
+local Title_4 = Instance.new("TextLabel")
+local Stuff_4 = Instance.new("Frame")
+local UICorner_23 = Instance.new("UICorner")
+local CashAuraButton = Instance.new("TextButton")
+local UICorner_24 = Instance.new("UICorner")
+local AutodropButton = Instance.new("TextButton")
+local UICorner_25 = Instance.new("UICorner")
+local LoopdestroyButton = Instance.new("TextButton")
+local UICorner_26 = Instance.new("UICorner")
+local CashCounter = Instance.new("TextLabel")
+local MoneyDropped = Instance.new("TextLabel")
+local LowGFX = Instance.new("TextButton")
+local UICorner_27 = Instance.new("UICorner")
+local CrashButton = Instance.new("TextButton")
+local UICorner_28 = Instance.new("UICorner")
+local Sidebar = Instance.new("Frame")
+local UICorner_29 = Instance.new("UICorner")
+local HomeButton = Instance.new("ImageButton")
+local MainButton = Instance.new("ImageButton")
+local TeleportsButton = Instance.new("ImageButton")
+local SellingButton = Instance.new("ImageButton")
+
+--Properties:
+
+BiwareSellersGUI.Name = "BiwareSellersGUI"
+BiwareSellersGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+BiwareSellersGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Warning.Name = "Warning"
+Warning.Parent = BiwareSellersGUI
+Warning.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Warning.Position = UDim2.new(0.65321058, 0, 0.392856985, 0)
+Warning.Size = UDim2.new(0, 200, 0, 100)
+Warning.Active = true
+
+UICorner.Parent = Warning
+
+Yes.Name = "Yes"
+Yes.Parent = Warning
+Yes.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Yes.Position = UDim2.new(0.0333569646, 0, 0.0699010193, 0)
+Yes.Size = UDim2.new(0, 185, 0, 86)
+
+UICorner_2.Parent = Yes
+
+TextLabel.Parent = Yes
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0324324332, 0, 0.17741935, 0)
+TextLabel.Size = UDim2.new(0, 173, 0, 40)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "This GUI is on it's 1.0.0 version, expect bugs and scripts not working correctly. Report bugs in our Discord."
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextButton.Parent = Yes
+TextButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+TextButton.Position = UDim2.new(0.237837821, 0, 0.725104332, 0)
+TextButton.Size = UDim2.new(0, 96, 0, 16)
+TextButton.Font = Enum.Font.GothamBlack
+TextButton.Text = "   Close   "
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 14.000
+
+UICorner_3.Parent = TextButton
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = BiwareSellersGUI
+MainFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+MainFrame.Position = UDim2.new(0.365610868, 0, 0.322589338, 0)
+MainFrame.Size = UDim2.new(0, 297, 0, 173)
+MainFrame.Active = true
+MainFrame.Draggable = true
+
+UICorner_4.Parent = MainFrame
+
+Pages.Name = "Pages"
+Pages.Parent = MainFrame
+Pages.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Pages.Position = UDim2.new(-0.00139251351, 0, -0.00488242507, 0)
+Pages.Size = UDim2.new(0, 297, 0, 173)
+
+UICorner_5.Parent = Pages
+
+HomePage.Name = "HomePage"
+HomePage.Parent = Pages
+HomePage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HomePage.BackgroundTransparency = 1.000
+HomePage.BorderSizePixel = 0
+HomePage.Size = UDim2.new(0, 297, 0, 173)
+
+Title.Name = "Title"
+Title.Parent = HomePage
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0, 0, 0.0404624268, 0)
+Title.Size = UDim2.new(0, 297, 0, 30)
+Title.Font = Enum.Font.GothamBlack
+Title.Text = "HOME"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+Viewport.Name = "Viewport"
+Viewport.Parent = HomePage
+Viewport.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Viewport.Position = UDim2.new(0.0269360263, 0, 0.213872731, 0)
+Viewport.Size = UDim2.new(0, 55, 0, 55)
+Viewport.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UICorner_6.CornerRadius = UDim.new(0, 200)
+UICorner_6.Parent = Viewport
+
+Username.Name = "Username"
+Username.Parent = HomePage
+Username.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Username.BackgroundTransparency = 1.000
+Username.BorderSizePixel = 0
+Username.Position = UDim2.new(0.25252524, 0, 0.306358367, 0)
+Username.Size = UDim2.new(0, 214, 0, 24)
+Username.Font = Enum.Font.GothamBold
+Username.Text = "Welcome, USERNAME"
+Username.TextColor3 = Color3.fromRGB(255, 255, 255)
+Username.TextScaled = true
+Username.TextSize = 14.000
+Username.TextWrapped = true
+Username.TextXAlignment = Enum.TextXAlignment.Left
+
+Stuff.Name = "Stuff"
+Stuff.Parent = HomePage
+Stuff.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+Stuff.Position = UDim2.new(0.0269360263, 0, 0.58848536, 0)
+Stuff.Size = UDim2.new(0, 281, 0, 63)
+
+UICorner_7.Parent = Stuff
+
+CopyDiscord.Name = "CopyDiscord"
+CopyDiscord.Parent = Stuff
+CopyDiscord.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+CopyDiscord.Position = UDim2.new(0.110320285, 0, 0.158730164, 0)
+CopyDiscord.Size = UDim2.new(0, 104, 0, 26)
+CopyDiscord.Font = Enum.Font.GothamBlack
+CopyDiscord.Text = "   Copy Discord   "
+CopyDiscord.TextColor3 = Color3.fromRGB(255, 255, 255)
+CopyDiscord.TextScaled = true
+CopyDiscord.TextSize = 14.000
+CopyDiscord.TextWrapped = true
+
+UICorner_8.Parent = CopyDiscord
+
+CopyGroup.Name = "CopyGroup"
+CopyGroup.Parent = Stuff
+CopyGroup.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+CopyGroup.Position = UDim2.new(0.519572973, 0, 0.158730164, 0)
+CopyGroup.Size = UDim2.new(0, 104, 0, 26)
+CopyGroup.Font = Enum.Font.GothamBlack
+CopyGroup.Text = "   Copy Group   "
+CopyGroup.TextColor3 = Color3.fromRGB(255, 255, 255)
+CopyGroup.TextScaled = true
+CopyGroup.TextSize = 14.000
+CopyGroup.TextWrapped = true
+
+UICorner_9.Parent = CopyGroup
+
+TextLabel_2.Parent = Stuff
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0284697507, 0, 0.666666687, 0)
+TextLabel_2.Size = UDim2.new(0, 267, 0, 13)
+TextLabel_2.Font = Enum.Font.GothamBlack
+TextLabel_2.Text = "This script was made by Luki."
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextTransparency = 0.710
+TextLabel_2.TextWrapped = true
+
+MainPage.Name = "MainPage"
+MainPage.Parent = Pages
+MainPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainPage.BackgroundTransparency = 1.000
+MainPage.BorderSizePixel = 0
+MainPage.Size = UDim2.new(0, 297, 0, 173)
+MainPage.Visible = false
+
+Title_2.Name = "Title"
+Title_2.Parent = MainPage
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.BorderSizePixel = 0
+Title_2.Position = UDim2.new(0, 0, 0.0404624268, 0)
+Title_2.Size = UDim2.new(0, 297, 0, 30)
+Title_2.Font = Enum.Font.GothamBlack
+Title_2.Text = "MAIN"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+
+Stuff_2.Name = "Stuff"
+Stuff_2.Parent = MainPage
+Stuff_2.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+Stuff_2.ClipsDescendants = true
+Stuff_2.Position = UDim2.new(0.0269360263, 0, 0.254335254, 0)
+Stuff_2.Size = UDim2.new(0, 281, 0, 120)
+
+UICorner_10.Parent = Stuff_2
+
+FlyButton.Name = "FlyButton"
+FlyButton.Parent = Stuff_2
+FlyButton.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+FlyButton.BorderSizePixel = 0
+FlyButton.Position = UDim2.new(0.0284697507, 0, 0.0916666687, 0)
+FlyButton.Size = UDim2.new(0, 111, 0, 25)
+FlyButton.Font = Enum.Font.GothamBlack
+FlyButton.Text = "   Fly [C]   "
+FlyButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+FlyButton.TextScaled = true
+FlyButton.TextSize = 14.000
+FlyButton.TextWrapped = true
+
+UICorner_11.Parent = FlyButton
+
+DestroymapButton.Name = "DestroymapButton"
+DestroymapButton.Parent = Stuff_2
+DestroymapButton.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+DestroymapButton.BorderSizePixel = 0
+DestroymapButton.Position = UDim2.new(0.55871892, 0, 0.0833333284, 0)
+DestroymapButton.Size = UDim2.new(0, 116, 0, 26)
+DestroymapButton.Font = Enum.Font.GothamBlack
+DestroymapButton.Text = "   Map Destroy   "
+DestroymapButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+DestroymapButton.TextScaled = true
+DestroymapButton.TextSize = 14.000
+DestroymapButton.TextWrapped = true
+
+UICorner_12.Parent = DestroymapButton
+
+Other.Name = "Other"
+Other.Parent = MainPage
+Other.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Other.ClipsDescendants = true
+Other.Position = UDim2.new(0.0538720526, 0, 0.531791806, 0)
+Other.Size = UDim2.new(0, 265, 0, 65)
+
+UICorner_13.Parent = Other
+
+TextLabel_3.Parent = Other
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0, 0, 0.291402489, 0)
+TextLabel_3.Size = UDim2.new(0, 265, 0, 26)
+TextLabel_3.Font = Enum.Font.GothamBlack
+TextLabel_3.Text = "Comming soon"
+TextLabel_3.TextColor3 = Color3.fromRGB(135, 135, 135)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+TeleportsPage.Name = "TeleportsPage"
+TeleportsPage.Parent = Pages
+TeleportsPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TeleportsPage.BackgroundTransparency = 1.000
+TeleportsPage.BorderSizePixel = 0
+TeleportsPage.Size = UDim2.new(0, 297, 0, 173)
+TeleportsPage.Visible = false
+
+Title_3.Name = "Title"
+Title_3.Parent = TeleportsPage
+Title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.BackgroundTransparency = 1.000
+Title_3.BorderSizePixel = 0
+Title_3.Position = UDim2.new(0, 0, 0.0404624268, 0)
+Title_3.Size = UDim2.new(0, 297, 0, 30)
+Title_3.Font = Enum.Font.GothamBlack
+Title_3.Text = "TELEPORTS"
+Title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.TextScaled = true
+Title_3.TextSize = 14.000
+Title_3.TextWrapped = true
+
+Stuff_3.Name = "Stuff"
+Stuff_3.Parent = TeleportsPage
+Stuff_3.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+Stuff_3.ClipsDescendants = true
+Stuff_3.Position = UDim2.new(0.0269360263, 0, 0.254335254, 0)
+Stuff_3.Size = UDim2.new(0, 281, 0, 120)
+
+UICorner_14.Parent = Stuff_3
+
+GOTO.Name = "GOTO"
+GOTO.Parent = Stuff_3
+GOTO.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+GOTO.Position = UDim2.new(0.352313161, 0, 0.777696073, 0)
+GOTO.Size = UDim2.new(0, 83, 0, 19)
+GOTO.Font = Enum.Font.GothamBlack
+GOTO.Text = "Go To"
+GOTO.TextColor3 = Color3.fromRGB(255, 255, 255)
+GOTO.TextSize = 14.000
+
+UICorner_15.CornerRadius = UDim.new(0, 5)
+UICorner_15.Parent = GOTO
+
+AdminButton.Name = "AdminButton"
+AdminButton.Parent = Stuff_3
+AdminButton.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+AdminButton.Position = UDim2.new(0.0284697507, 0, 0.0901960805, 0)
+AdminButton.Size = UDim2.new(0, 83, 0, 19)
+AdminButton.Font = Enum.Font.GothamBlack
+AdminButton.Text = "Admin"
+AdminButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+AdminButton.TextSize = 14.000
+
+UICorner_16.CornerRadius = UDim.new(0, 5)
+UICorner_16.Parent = AdminButton
+
+BankButton.Name = "BankButton"
+BankButton.Parent = Stuff_3
+BankButton.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+BankButton.Position = UDim2.new(0.352313161, 0, 0.0901960805, 0)
+BankButton.Size = UDim2.new(0, 83, 0, 19)
+BankButton.Font = Enum.Font.GothamBlack
+BankButton.Text = "Bank"
+BankButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+BankButton.TextSize = 14.000
+
+UICorner_17.CornerRadius = UDim.new(0, 5)
+UICorner_17.Parent = BankButton
+
+BasketButton.Name = "BasketButton"
+BasketButton.Parent = Stuff_3
+BasketButton.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+BasketButton.Position = UDim2.new(0.672597885, 0, 0.0901960805, 0)
+BasketButton.Size = UDim2.new(0, 83, 0, 19)
+BasketButton.Font = Enum.Font.GothamBlack
+BasketButton.Text = "Basket"
+BasketButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+BasketButton.TextSize = 14.000
+
+UICorner_18.CornerRadius = UDim.new(0, 5)
+UICorner_18.Parent = BasketButton
+
+SZButton.Name = "SZButton"
+SZButton.Parent = Stuff_3
+SZButton.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+SZButton.Position = UDim2.new(0.672597885, 0, 0.290196061, 0)
+SZButton.Size = UDim2.new(0, 83, 0, 19)
+SZButton.Font = Enum.Font.GothamBlack
+SZButton.Text = "SZ3"
+SZButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+SZButton.TextSize = 14.000
+
+UICorner_19.CornerRadius = UDim.new(0, 5)
+UICorner_19.Parent = SZButton
+
+TextBox.Parent = Stuff_3
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.Position = UDim2.new(0.0284697507, 0, 0.525000036, 0)
+TextBox.Size = UDim2.new(0, 264, 0, 21)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.PlaceholderText = "Full username goes here..."
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 14.000
+
+UICorner_20.Parent = TextBox
+
+TrainButton.Name = "TrainButton"
+TrainButton.Parent = Stuff_3
+TrainButton.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+TrainButton.Position = UDim2.new(0.0284697507, 0, 0.290196061, 0)
+TrainButton.Size = UDim2.new(0, 83, 0, 19)
+TrainButton.Font = Enum.Font.GothamBlack
+TrainButton.Text = "Train"
+TrainButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TrainButton.TextSize = 14.000
+
+UICorner_21.CornerRadius = UDim.new(0, 5)
+UICorner_21.Parent = TrainButton
+
+GraveButton.Name = "GraveButton"
+GraveButton.Parent = Stuff_3
+GraveButton.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+GraveButton.Position = UDim2.new(0.352313161, 0, 0.290196061, 0)
+GraveButton.Size = UDim2.new(0, 83, 0, 19)
+GraveButton.Font = Enum.Font.GothamBlack
+GraveButton.Text = "Grave"
+GraveButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+GraveButton.TextSize = 14.000
+
+UICorner_22.CornerRadius = UDim.new(0, 5)
+UICorner_22.Parent = GraveButton
+
+SellingPage.Name = "SellingPage"
+SellingPage.Parent = Pages
+SellingPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SellingPage.BackgroundTransparency = 1.000
+SellingPage.BorderSizePixel = 0
+SellingPage.Size = UDim2.new(0, 297, 0, 173)
+SellingPage.Visible = false
+
+Title_4.Name = "Title"
+Title_4.Parent = SellingPage
+Title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.BackgroundTransparency = 1.000
+Title_4.BorderSizePixel = 0
+Title_4.Position = UDim2.new(0, 0, 0.0404624268, 0)
+Title_4.Size = UDim2.new(0, 297, 0, 30)
+Title_4.Font = Enum.Font.GothamBlack
+Title_4.Text = "SELLING"
+Title_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.TextScaled = true
+Title_4.TextSize = 14.000
+Title_4.TextWrapped = true
+
+Stuff_4.Name = "Stuff"
+Stuff_4.Parent = SellingPage
+Stuff_4.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+Stuff_4.ClipsDescendants = true
+Stuff_4.Position = UDim2.new(0.0269360263, 0, 0.254335254, 0)
+Stuff_4.Size = UDim2.new(0, 281, 0, 120)
+
+UICorner_23.Parent = Stuff_4
+
+CashAuraButton.Name = "CashAuraButton"
+CashAuraButton.Parent = Stuff_4
+CashAuraButton.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+CashAuraButton.Position = UDim2.new(0.0284697507, 0, 0.0901960805, 0)
+CashAuraButton.Size = UDim2.new(0, 83, 0, 19)
+CashAuraButton.Font = Enum.Font.GothamBlack
+CashAuraButton.Text = "Cash Aura"
+CashAuraButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+CashAuraButton.TextSize = 14.000
+
+UICorner_24.CornerRadius = UDim.new(0, 5)
+UICorner_24.Parent = CashAuraButton
+
+AutodropButton.Name = "AutodropButton"
+AutodropButton.Parent = Stuff_4
+AutodropButton.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+AutodropButton.Position = UDim2.new(0.352313161, 0, 0.0901960805, 0)
+AutodropButton.Size = UDim2.new(0, 83, 0, 19)
+AutodropButton.Font = Enum.Font.GothamBlack
+AutodropButton.Text = "Autodrop"
+AutodropButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutodropButton.TextSize = 14.000
+
+UICorner_25.CornerRadius = UDim.new(0, 5)
+UICorner_25.Parent = AutodropButton
+
+LoopdestroyButton.Name = "LoopdestroyButton"
+LoopdestroyButton.Parent = Stuff_4
+LoopdestroyButton.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+LoopdestroyButton.Position = UDim2.new(0.672597885, 0, 0.0901960805, 0)
+LoopdestroyButton.Size = UDim2.new(0, 83, 0, 19)
+LoopdestroyButton.Font = Enum.Font.GothamBlack
+LoopdestroyButton.Text = "Loopdestroy"
+LoopdestroyButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+LoopdestroyButton.TextSize = 12.000
+
+UICorner_26.CornerRadius = UDim.new(0, 5)
+UICorner_26.Parent = LoopdestroyButton
+
+CashCounter.Name = "CashCounter"
+CashCounter.Parent = Stuff_4
+CashCounter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CashCounter.BackgroundTransparency = 1.000
+CashCounter.Position = UDim2.new(0.0284697507, 0, 0.758333325, 0)
+CashCounter.Size = UDim2.new(0, 264, 0, 22)
+CashCounter.Font = Enum.Font.GothamBlack
+CashCounter.Text = "$1,464,123"
+CashCounter.TextColor3 = Color3.fromRGB(255, 255, 255)
+CashCounter.TextSize = 14.000
+
+MoneyDropped.Name = "MoneyDropped"
+MoneyDropped.Parent = Stuff_4
+MoneyDropped.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MoneyDropped.BackgroundTransparency = 1.000
+MoneyDropped.Position = UDim2.new(0.0284697507, 0, 0.574999988, 0)
+MoneyDropped.Size = UDim2.new(0, 264, 0, 22)
+MoneyDropped.Font = Enum.Font.GothamBlack
+MoneyDropped.Text = "Money Dropped:"
+MoneyDropped.TextColor3 = Color3.fromRGB(255, 255, 255)
+MoneyDropped.TextSize = 14.000
+
+LowGFX.Name = "LowGFX"
+LowGFX.Parent = Stuff_4
+LowGFX.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+LowGFX.Position = UDim2.new(0.188612103, 0, 0.298529416, 0)
+LowGFX.Size = UDim2.new(0, 83, 0, 19)
+LowGFX.Font = Enum.Font.GothamBlack
+LowGFX.Text = "Low GFX"
+LowGFX.TextColor3 = Color3.fromRGB(255, 255, 255)
+LowGFX.TextSize = 14.000
+
+UICorner_27.CornerRadius = UDim.new(0, 5)
+UICorner_27.Parent = LowGFX
+
+CrashButton.Name = "CrashButton"
+CrashButton.Parent = Stuff_4
+CrashButton.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+CrashButton.Position = UDim2.new(0.512455523, 0, 0.298529416, 0)
+CrashButton.Size = UDim2.new(0, 83, 0, 19)
+CrashButton.Font = Enum.Font.GothamBlack
+CrashButton.Text = "Crash"
+CrashButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+CrashButton.TextSize = 14.000
+
+UICorner_28.CornerRadius = UDim.new(0, 5)
+UICorner_28.Parent = CrashButton
+
+Sidebar.Name = "Sidebar"
+Sidebar.Parent = MainFrame
+Sidebar.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Sidebar.Position = UDim2.new(-0.148050636, 0, 0.00667825341, 0)
+Sidebar.Size = UDim2.new(0, 36, 0, 173)
+
+UICorner_29.Parent = Sidebar
+
+HomeButton.Name = "HomeButton"
+HomeButton.Parent = Sidebar
+HomeButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HomeButton.BackgroundTransparency = 1.000
+HomeButton.Position = UDim2.new(0.0833333358, 0, 0.075144507, 0)
+HomeButton.Size = UDim2.new(0, 29, 0, 29)
+HomeButton.Image = "rbxassetid://1204390775"
+
+MainButton.Name = "MainButton"
+MainButton.Parent = Sidebar
+MainButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainButton.BackgroundTransparency = 1.000
+MainButton.Position = UDim2.new(0.138888896, 0, 0.306358367, 0)
+MainButton.Size = UDim2.new(0, 25, 0, 25)
+MainButton.Image = "rbxassetid://10046008118"
+MainButton.ScaleType = Enum.ScaleType.Fit
+MainButton.TileSize = UDim2.new(0.5, 0, 0.5, 0)
+
+TeleportsButton.Name = "TeleportsButton"
+TeleportsButton.Parent = Sidebar
+TeleportsButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TeleportsButton.BackgroundTransparency = 1.000
+TeleportsButton.Position = UDim2.new(0.0833333358, 0, 0.520231187, 0)
+TeleportsButton.Size = UDim2.new(0, 29, 0, 29)
+TeleportsButton.Image = "rbxassetid://6723742952"
+
+SellingButton.Name = "SellingButton"
+SellingButton.Parent = Sidebar
+SellingButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SellingButton.BackgroundTransparency = 1.000
+SellingButton.Position = UDim2.new(0.0833333358, 0, 0.728323638, 0)
+SellingButton.Size = UDim2.new(0, 29, 0, 29)
+SellingButton.Image = "rbxassetid://2246496691"
+
+-- Scripts:
+
+local function UBKRYU_fake_script() -- BiwareSellersGUI.Toggle 
+	local script = Instance.new('LocalScript', BiwareSellersGUI)
+
+	local frame = script.Parent.MainFrame
+	local hotkey = Enum.KeyCode.V
+	
+	local UIS = game:GetService("UserInputService")
+	local open = false
+	
+	UIS.InputBegan:Connect(function(key, gp)
+	 if key.KeyCode == hotkey then
+	  if UIS:GetFocusedTextBox() == nil then
+	   if open == false then
+	    open = true 
+		frame.Visible = open
+		print("GUI Open!")	
+	   elseif open == true then
+	    open = false
+		frame.Visible = open
+		print("GUI Closed!")
+	   end
+	  end
+	 end
+	end)
+	
+end
+coroutine.wrap(UBKRYU_fake_script)()
+local function DCRYSJ_fake_script() -- BiwareSellersGUI.antiafk 
+	local script = Instance.new('LocalScript', BiwareSellersGUI)
+
+	local VirtualUser=game:service'VirtualUser'
+	game:service'Players'.LocalPlayer.Idled:connect(function()
+		VirtualUser:CaptureController()
+		VirtualUser:ClickButton2(Vector2.new())
+	end)
+	
+	print("Anti-Afk is Loaded")
+end
+coroutine.wrap(DCRYSJ_fake_script)()
+local function XJNZY_fake_script() -- BiwareSellersGUI.LocalScript 
+	local script = Instance.new('LocalScript', BiwareSellersGUI)
+
+	print("Script loaded sucessfully!")
+end
+coroutine.wrap(XJNZY_fake_script)()
+local function PDJF_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(PDJF_fake_script)()
+local function MLODEJJ_fake_script() -- Viewport.LocalScript 
+	local script = Instance.new('LocalScript', Viewport)
+
+	local player = game.Players.LocalPlayer
+	local image = script.Parent
+	
+	while wait(1) do
+		image.Image = game.Players:GetUserThumbnailAsync(player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size352x352)
+	end
+end
+coroutine.wrap(MLODEJJ_fake_script)()
+local function RNCB_fake_script() -- Username.LocalScript 
+	local script = Instance.new('LocalScript', Username)
+
+	local text = script.Parent
+	
+	while wait() do
+		text.Text = "Welcome, "..game:GetService("Players").LocalPlayer.Name
+	end
+end
+coroutine.wrap(RNCB_fake_script)()
+local function UAIUTT_fake_script() -- CopyDiscord.LocalScript 
+	local script = Instance.new('LocalScript', CopyDiscord)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		print("Copied Server successfully.")
+		setclipboard("https://discord.gg/gGbq6jGjAS")
+	end)
+end
+coroutine.wrap(UAIUTT_fake_script)()
+local function PZEHY_fake_script() -- CopyGroup.LocalScript 
+	local script = Instance.new('LocalScript', CopyGroup)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		print("Copied Group successfully.")
+		setclipboard("https://www.roblox.com/groups/15256532/Biware-Control#!/about")
+	end)
+end
+coroutine.wrap(PZEHY_fake_script)()
+local function AXDEG_fake_script() -- FlyButton.LocalScript 
+	local script = Instance.new('LocalScript', FlyButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		print('Fly Loaded.')
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/imlukii/BiwareScripts/main/ShazamFly', true))()
+	end)
+end
+coroutine.wrap(AXDEG_fake_script)()
+local function MJISAUE_fake_script() -- DestroymapButton.LocalScript 
+	local script = Instance.new('LocalScript', DestroymapButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'Light Post' or thepart.Name == 'Street Light' then
+				thepart:Destroy()
+			end
+		end
+	
+		game.Workspace.MAP.Map.bank:Destroy()
+		game.Workspace.Lights:Destroy()
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):WaitForChild('Game-Houses'):GetChildren()) do
+			if thepart.Name == 'Apartment' or thepart.Name == 'Street Light' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'wooden fence' or thepart.Name == 'wooden fence' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'cinder block' or thepart.Name == 'cinder block' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'concrete barrier' or thepart.Name == 'concrete barrier' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'slum house 3' or thepart.Name == 'slum house 3' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'slum house 4' or thepart.Name == 'slum house 4' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'slum house 7' or thepart.Name == 'slum house 7' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'slum house 6' or thepart.Name == 'slum house 6' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'tree' or thepart.Name == 'tree' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'tree 1' or thepart.Name == 'tree 1' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'tree 2' or thepart.Name == 'tree 2' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'tree 3' or thepart.Name == 'tree 3' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'Sewer Light' or thepart.Name == 'Sewer Light' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'door' or thepart.Name == 'door' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'slum house 5' or thepart.Name == 'slum house 5' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'Da Theatre' or thepart.Name == 'Da Theatre' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'metal pillar' or thepart.Name == 'metal pillar' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'wire fence' or thepart.Name == 'wire fence' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'Fences' or thepart.Name == 'Fences' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'ChurchChair' or thepart.Name == 'ChurchChair' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'slum house 2' or thepart.Name == 'slum house 2' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'Da Casino' or thepart.Name == 'Da Casino' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'Sign' or thepart.Name == 'Sign' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'picnic bench' or thepart.Name == 'picnic bench' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'slum house 1' or thepart.Name == 'slum house 1' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'Firedepartment' or thepart.Name == 'Firedepartment' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'broken house' or thepart.Name == 'broken house' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'SHOP' or thepart.Name == 'SHOP' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'SHOP' or thepart.Name == "Ubi's Resturant" then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'Apartment' or thepart.Name == 'Apartment' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'Phone Store' or thepart.Name == 'Phone Store' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'Church' or thepart.Name == 'Church' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'Photo' or thepart.Name == 'Photo' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'bench' or thepart.Name == 'bench' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'Door' or thepart.Name == 'Door' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'oven' or thepart.Name == 'oven' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'oil barrel' or thepart.Name == 'oil barrel' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'garabage' or thepart.Name == 'garabage' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'trash' or thepart.Name == 'trash' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'Meshes/mountain' or thepart.Name == 'Meshes/mountain' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'Sewer Liquid' or thepart.Name == 'Sewer Liquid' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'Spray' or thepart.Name == 'Spray' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'Meshes/aDumpster' or thepart.Name == 'Meshes/aDumpster' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'Lights' or thepart.Name == 'Lights' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'cracks' or thepart.Name == 'cracks' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'Bush' or thepart.Name == 'bush' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'Trash Can' or thepart.Name == 'Trash Can' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'grave' or thepart.Name == 'grave' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):WaitForChild('Map'):GetChildren()) do
+			if thepart.Name == 'carpet' or thepart.Name == 'carpet' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):GetChildren()) do
+			if thepart.Name == 'Fences/UF' or thepart.Name == 'Fences/UF' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('MAP'):GetChildren()) do
+			if thepart.Name == 'CarnivalPlace' or thepart.Name == 'CarnivalPlace' then
+				thepart:Destroy()
+			end
+		end
+	
+		for i, thepart in pairs(game.Workspace:WaitForChild('Cashiers'):GetChildren()) do
+			if thepart.Name == 'CA$HIER' or thepart.Name == 'CA$HIER' then
+				thepart:Destroy()
+			end
+		end
+	end)
+end
+coroutine.wrap(MJISAUE_fake_script)()
+local function RXDRTJ_fake_script() -- GOTO.LocalScript 
+	local script = Instance.new('LocalScript', GOTO)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local p2 = script.Parent.Parent.TextBox.Text
+		
+		p1.CFrame = game.Players[p2].Character.HumanoidRootPart.CFrame
+		print("Teleported to "..p2.."")
+	end)
+end
+coroutine.wrap(RXDRTJ_fake_script)()
+local function CXKBVG_fake_script() -- AdminButton.LocalScript 
+	local script = Instance.new('LocalScript', AdminButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		print("Teleported to Admin.")
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-872.03, -38.3992, -585.26)
+	end)
+end
+coroutine.wrap(CXKBVG_fake_script)()
+local function GCWCK_fake_script() -- BankButton.LocalScript 
+	local script = Instance.new('LocalScript', BankButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		print("Teleported to Bank.")
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402.433, 21.75, -286.213)
+	end)
+end
+coroutine.wrap(GCWCK_fake_script)()
+local function OIISBM_fake_script() -- BasketButton.LocalScript 
+	local script = Instance.new('LocalScript', BasketButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		print("Teleported to Basketball Court.")
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-932.03, 22.0998, -482.54)
+	end)
+end
+coroutine.wrap(OIISBM_fake_script)()
+local function WUQSZ_fake_script() -- SZButton.LocalScript 
+	local script = Instance.new('LocalScript', SZButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		print("Teleported to Safe Zone.")
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3.58, 11.75, 200.03)
+	end)
+end
+coroutine.wrap(WUQSZ_fake_script)()
+local function MDGDKZ_fake_script() -- TrainButton.LocalScript 
+	local script = Instance.new('LocalScript', TrainButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		print("Teleported to Train.")
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(595.815, 48, -113.703)
+	end)
+end
+coroutine.wrap(MDGDKZ_fake_script)()
+local function USTWE_fake_script() -- GraveButton.LocalScript 
+	local script = Instance.new('LocalScript', GraveButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		print("Teleported to Grave.")
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(177.885, 21.75, 55.1252)
+	end)
+end
+coroutine.wrap(USTWE_fake_script)()
+local function XDYIVZB_fake_script() -- CashAuraButton.LocalScript 
+	local script = Instance.new('LocalScript', CashAuraButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		print('Cash Aura Loaded.')
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/imlukii/BiwareScripts/main/CashAura', true))()
+	end)
+end
+coroutine.wrap(XDYIVZB_fake_script)()
+local function CMGXTQZ_fake_script() -- AutodropButton.LocalScript 
+	local script = Instance.new('LocalScript', AutodropButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		print('Autodrop Loaded.')
+		local IsDropping = false
+		
+		if IsDropping == false then
+			IsDropping = true
+		end
+		
+		if IsDropping == true then
+			IsDropping = false
+		end
+		
+		while IsDropping == true do
+			for i=1, 8e312 do
+				if IsDropping == false then
+					break
+				end
+				if IsDropping == true then
+					game:GetService("ReplicatedStorage").MainEvent:FireServer('DropMoney', '10000')
+					wait(15)
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(CMGXTQZ_fake_script)()
+local function ETLAWYC_fake_script() -- LoopdestroyButton.LocalScript 
+	local script = Instance.new('LocalScript', LoopdestroyButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		print("Loopdestroy Loaded.")
+		local loopdestroy = true
+		
+		while loopdestroy == true do
+			for i, thepart in pairs(game.Workspace:WaitForChild('Ignored'):WaitForChild('Drop'):GetChildren()) do
+				if thepart.Name == 'MoneyDrop' or thepart.Name == 'MoneyDropCounted' then
+					thepart:Destroy()
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(ETLAWYC_fake_script)()
+local function FPATFVE_fake_script() -- CashCounter.LocalScript 
+	local script = Instance.new('LocalScript', CashCounter)
+
+	while wait() do
+		pcall(function()
+			local amount = 0
+			for i,v in pairs(game.Workspace.Ignored.Drop:GetChildren()) do
+				if v.Name == "MoneyDrop" then
+					local cash = string.split(v.BillboardGui.TextLabel.Text,"$")[2]
+					if string.match(cash,',') then
+						amount = amount + cash:gsub("%,","")
+					else
+						amount = amount + cash
+					end
+				end
+			end
+			local function checking(amount)
+				amount = tostring(amount)
+				return amount:reverse():gsub("%d%d%d", "%1,"):reverse():gsub("^,", "")
+			end
+			script.Parent.Text = "Dropped Cash: $"..checking(amount)..""
+		end)
+	end
+end
+coroutine.wrap(FPATFVE_fake_script)()
+local function FXMRX_fake_script() -- LowGFX.LocalScript 
+	local script = Instance.new('LocalScript', LowGFX)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		print("Low GFX Loaded.")
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/W9K/roblox-scripts/main/fpsshit.lua'))()
+	end)
+end
+coroutine.wrap(FXMRX_fake_script)()
+local function TOSG_fake_script() -- CrashButton.LocalScript 
+	local script = Instance.new('LocalScript', CrashButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		print("Crash Loaded.")
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/BetterDaHood/BetterDaHoodCrasher/main/Crash'))()
+	end)
+end
+coroutine.wrap(TOSG_fake_script)()
+local function HJSVO_fake_script() -- HomeButton.LocalScript 
+	local script = Instance.new('LocalScript', HomeButton)
+
+	local player = game.Players.LocalPlayer
+	
+	-- variables
+	
+	local Home = script.Parent.Parent.Parent.Pages.HomePage
+	local Main = script.Parent.Parent.Parent.Pages.MainPage
+	local Teleports = script.Parent.Parent.Parent.Pages.TeleportsPage
+	local Selling = script.Parent.Parent.Parent.Pages.SellingPage
+	
+	-- script
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Home.Visible = true
+		Main.Visible = false
+		Teleports.Visible = false
+		Selling.Visible = false
+	end)
+end
+coroutine.wrap(HJSVO_fake_script)()
+local function UZGVLY_fake_script() -- MainButton.LocalScript 
+	local script = Instance.new('LocalScript', MainButton)
+
+	local player = game.Players.LocalPlayer
+	
+	-- variables
+	
+	local Home = script.Parent.Parent.Parent.Pages.HomePage
+	local Main = script.Parent.Parent.Parent.Pages.MainPage
+	local Teleports = script.Parent.Parent.Parent.Pages.TeleportsPage
+	local Selling = script.Parent.Parent.Parent.Pages.SellingPage
+	
+	-- script
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Home.Visible = false
+		Main.Visible = true
+		Teleports.Visible = false
+		Selling.Visible = false
+	end)
+end
+coroutine.wrap(UZGVLY_fake_script)()
+local function AKTUI_fake_script() -- TeleportsButton.LocalScript 
+	local script = Instance.new('LocalScript', TeleportsButton)
+
+	local player = game.Players.LocalPlayer
+	
+	-- variables
+	
+	local Home = script.Parent.Parent.Parent.Pages.HomePage
+	local Main = script.Parent.Parent.Parent.Pages.MainPage
+	local Teleports = script.Parent.Parent.Parent.Pages.TeleportsPage
+	local Selling = script.Parent.Parent.Parent.Pages.SellingPage
+	
+	-- script
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Home.Visible = false
+		Main.Visible = false
+		Teleports.Visible = true
+		Selling.Visible = false
+	end)
+end
+coroutine.wrap(AKTUI_fake_script)()
+local function FETLI_fake_script() -- SellingButton.LocalScript 
+	local script = Instance.new('LocalScript', SellingButton)
+
+	local player = game.Players.LocalPlayer
+	
+	-- variables
+	
+	local Home = script.Parent.Parent.Parent.Pages.HomePage
+	local Main = script.Parent.Parent.Parent.Pages.MainPage
+	local Teleports = script.Parent.Parent.Parent.Pages.TeleportsPage
+	local Selling = script.Parent.Parent.Parent.Pages.SellingPage
+	
+	-- script
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Home.Visible = false
+		Main.Visible = false
+		Teleports.Visible = false
+		Selling.Visible = true
+	end)
+end
+coroutine.wrap(FETLI_fake_script)()
