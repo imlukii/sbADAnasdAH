@@ -1,81 +1,69 @@
--- Gui to Lua
--- Version: 3.2
-
 -- Instances:
 
-local BiwareSellersGUI = Instance.new("ScreenGui")
-local Warning = Instance.new("Frame")
-local UICorner = Instance.new("UICorner")
-local Yes = Instance.new("Frame")
-local UICorner_2 = Instance.new("UICorner")
-local TextLabel = Instance.new("TextLabel")
-local TextButton = Instance.new("TextButton")
-local UICorner_3 = Instance.new("UICorner")
+local NJASbiasbdkaD = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
-local UICorner_4 = Instance.new("UICorner")
+local UICorner = Instance.new("UICorner")
 local Pages = Instance.new("Frame")
-local UICorner_5 = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
 local HomePage = Instance.new("Frame")
 local Title = Instance.new("TextLabel")
 local Viewport = Instance.new("ImageLabel")
-local UICorner_6 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
 local Username = Instance.new("TextLabel")
 local Stuff = Instance.new("Frame")
-local UICorner_7 = Instance.new("UICorner")
+local UICorner_4 = Instance.new("UICorner")
 local CopyDiscord = Instance.new("TextButton")
-local UICorner_8 = Instance.new("UICorner")
+local UICorner_5 = Instance.new("UICorner")
 local CopyGroup = Instance.new("TextButton")
-local UICorner_9 = Instance.new("UICorner")
-local TextLabel_2 = Instance.new("TextLabel")
+local UICorner_6 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
 local MainPage = Instance.new("Frame")
 local Title_2 = Instance.new("TextLabel")
 local Stuff_2 = Instance.new("Frame")
-local UICorner_10 = Instance.new("UICorner")
+local UICorner_7 = Instance.new("UICorner")
 local FlyButton = Instance.new("TextButton")
-local UICorner_11 = Instance.new("UICorner")
+local UICorner_8 = Instance.new("UICorner")
 local DestroymapButton = Instance.new("TextButton")
-local UICorner_12 = Instance.new("UICorner")
+local UICorner_9 = Instance.new("UICorner")
 local Other = Instance.new("Frame")
-local UICorner_13 = Instance.new("UICorner")
-local TextLabel_3 = Instance.new("TextLabel")
+local UICorner_10 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
 local TeleportsPage = Instance.new("Frame")
 local Title_3 = Instance.new("TextLabel")
 local Stuff_3 = Instance.new("Frame")
-local UICorner_14 = Instance.new("UICorner")
+local UICorner_11 = Instance.new("UICorner")
 local GOTO = Instance.new("TextButton")
-local UICorner_15 = Instance.new("UICorner")
+local UICorner_12 = Instance.new("UICorner")
 local AdminButton = Instance.new("TextButton")
-local UICorner_16 = Instance.new("UICorner")
+local UICorner_13 = Instance.new("UICorner")
 local BankButton = Instance.new("TextButton")
-local UICorner_17 = Instance.new("UICorner")
+local UICorner_14 = Instance.new("UICorner")
 local BasketButton = Instance.new("TextButton")
-local UICorner_18 = Instance.new("UICorner")
+local UICorner_15 = Instance.new("UICorner")
 local SZButton = Instance.new("TextButton")
-local UICorner_19 = Instance.new("UICorner")
+local UICorner_16 = Instance.new("UICorner")
 local TextBox = Instance.new("TextBox")
-local UICorner_20 = Instance.new("UICorner")
+local UICorner_17 = Instance.new("UICorner")
 local TrainButton = Instance.new("TextButton")
-local UICorner_21 = Instance.new("UICorner")
+local UICorner_18 = Instance.new("UICorner")
 local GraveButton = Instance.new("TextButton")
-local UICorner_22 = Instance.new("UICorner")
+local UICorner_19 = Instance.new("UICorner")
 local SellingPage = Instance.new("Frame")
 local Title_4 = Instance.new("TextLabel")
 local Stuff_4 = Instance.new("Frame")
-local UICorner_23 = Instance.new("UICorner")
+local UICorner_20 = Instance.new("UICorner")
 local CashAuraButton = Instance.new("TextButton")
-local UICorner_24 = Instance.new("UICorner")
-local AutodropButton = Instance.new("TextButton")
-local UICorner_25 = Instance.new("UICorner")
+local UICorner_21 = Instance.new("UICorner")
 local LoopdestroyButton = Instance.new("TextButton")
-local UICorner_26 = Instance.new("UICorner")
+local UICorner_22 = Instance.new("UICorner")
 local CashCounter = Instance.new("TextLabel")
 local MoneyDropped = Instance.new("TextLabel")
 local LowGFX = Instance.new("TextButton")
-local UICorner_27 = Instance.new("UICorner")
+local UICorner_23 = Instance.new("UICorner")
 local CrashButton = Instance.new("TextButton")
-local UICorner_28 = Instance.new("UICorner")
+local UICorner_24 = Instance.new("UICorner")
 local Sidebar = Instance.new("Frame")
-local UICorner_29 = Instance.new("UICorner")
+local UICorner_25 = Instance.new("UICorner")
 local HomeButton = Instance.new("ImageButton")
 local MainButton = Instance.new("ImageButton")
 local TeleportsButton = Instance.new("ImageButton")
@@ -83,59 +71,19 @@ local SellingButton = Instance.new("ImageButton")
 
 --Properties:
 
-BiwareSellersGUI.Name = "BiwareSellersGUI"
-BiwareSellersGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-BiwareSellersGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-Warning.Name = "Warning"
-Warning.Parent = BiwareSellersGUI
-Warning.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-Warning.Position = UDim2.new(0.65321058, 0, 0.392856985, 0)
-Warning.Size = UDim2.new(0, 200, 0, 100)
-Warning.Active = true
-
-UICorner.Parent = Warning
-
-Yes.Name = "Yes"
-Yes.Parent = Warning
-Yes.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
-Yes.Position = UDim2.new(0.0333569646, 0, 0.0699010193, 0)
-Yes.Size = UDim2.new(0, 185, 0, 86)
-
-UICorner_2.Parent = Yes
-
-TextLabel.Parent = Yes
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0.0324324332, 0, 0.17741935, 0)
-TextLabel.Size = UDim2.new(0, 173, 0, 40)
-TextLabel.Font = Enum.Font.GothamBold
-TextLabel.Text = "This GUI is on it's 1.0.0 version, expect bugs and scripts not working correctly. Report bugs in our Discord."
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
-
-TextButton.Parent = Yes
-TextButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-TextButton.Position = UDim2.new(0.237837821, 0, 0.725104332, 0)
-TextButton.Size = UDim2.new(0, 96, 0, 16)
-TextButton.Font = Enum.Font.GothamBlack
-TextButton.Text = "   Close   "
-TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.TextSize = 14.000
-
-UICorner_3.Parent = TextButton
+NJASbiasbdkaD.Name = "NJASbiasbdkaD"
+NJASbiasbdkaD.Parent = game.CoreGui
+NJASbiasbdkaD.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 MainFrame.Name = "MainFrame"
-MainFrame.Parent = BiwareSellersGUI
+MainFrame.Parent = NJASbiasbdkaD
 MainFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 MainFrame.Position = UDim2.new(0.365610868, 0, 0.322589338, 0)
 MainFrame.Size = UDim2.new(0, 297, 0, 173)
 MainFrame.Active = true
 MainFrame.Draggable = true
 
-UICorner_4.Parent = MainFrame
+UICorner.Parent = MainFrame
 
 Pages.Name = "Pages"
 Pages.Parent = MainFrame
@@ -143,7 +91,7 @@ Pages.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 Pages.Position = UDim2.new(-0.00139251351, 0, -0.00488242507, 0)
 Pages.Size = UDim2.new(0, 297, 0, 173)
 
-UICorner_5.Parent = Pages
+UICorner_2.Parent = Pages
 
 HomePage.Name = "HomePage"
 HomePage.Parent = Pages
@@ -173,8 +121,8 @@ Viewport.Position = UDim2.new(0.0269360263, 0, 0.213872731, 0)
 Viewport.Size = UDim2.new(0, 55, 0, 55)
 Viewport.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 
-UICorner_6.CornerRadius = UDim.new(0, 200)
-UICorner_6.Parent = Viewport
+UICorner_3.CornerRadius = UDim.new(0, 200)
+UICorner_3.Parent = Viewport
 
 Username.Name = "Username"
 Username.Parent = HomePage
@@ -197,7 +145,7 @@ Stuff.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
 Stuff.Position = UDim2.new(0.0269360263, 0, 0.58848536, 0)
 Stuff.Size = UDim2.new(0, 281, 0, 63)
 
-UICorner_7.Parent = Stuff
+UICorner_4.Parent = Stuff
 
 CopyDiscord.Name = "CopyDiscord"
 CopyDiscord.Parent = Stuff
@@ -211,7 +159,7 @@ CopyDiscord.TextScaled = true
 CopyDiscord.TextSize = 14.000
 CopyDiscord.TextWrapped = true
 
-UICorner_8.Parent = CopyDiscord
+UICorner_5.Parent = CopyDiscord
 
 CopyGroup.Name = "CopyGroup"
 CopyGroup.Parent = Stuff
@@ -225,21 +173,21 @@ CopyGroup.TextScaled = true
 CopyGroup.TextSize = 14.000
 CopyGroup.TextWrapped = true
 
-UICorner_9.Parent = CopyGroup
+UICorner_6.Parent = CopyGroup
 
-TextLabel_2.Parent = Stuff
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Position = UDim2.new(0.0284697507, 0, 0.666666687, 0)
-TextLabel_2.Size = UDim2.new(0, 267, 0, 13)
-TextLabel_2.Font = Enum.Font.GothamBlack
-TextLabel_2.Text = "This script was made by Luki."
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextScaled = true
-TextLabel_2.TextSize = 14.000
-TextLabel_2.TextTransparency = 0.710
-TextLabel_2.TextWrapped = true
+TextLabel.Parent = Stuff
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0284697507, 0, 0.666666687, 0)
+TextLabel.Size = UDim2.new(0, 267, 0, 13)
+TextLabel.Font = Enum.Font.GothamBlack
+TextLabel.Text = "This script was made by lazy#9999"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextTransparency = 0.710
+TextLabel.TextWrapped = true
 
 MainPage.Name = "MainPage"
 MainPage.Parent = Pages
@@ -270,7 +218,7 @@ Stuff_2.ClipsDescendants = true
 Stuff_2.Position = UDim2.new(0.0269360263, 0, 0.254335254, 0)
 Stuff_2.Size = UDim2.new(0, 281, 0, 120)
 
-UICorner_10.Parent = Stuff_2
+UICorner_7.Parent = Stuff_2
 
 FlyButton.Name = "FlyButton"
 FlyButton.Parent = Stuff_2
@@ -285,7 +233,7 @@ FlyButton.TextScaled = true
 FlyButton.TextSize = 14.000
 FlyButton.TextWrapped = true
 
-UICorner_11.Parent = FlyButton
+UICorner_8.Parent = FlyButton
 
 DestroymapButton.Name = "DestroymapButton"
 DestroymapButton.Parent = Stuff_2
@@ -300,7 +248,7 @@ DestroymapButton.TextScaled = true
 DestroymapButton.TextSize = 14.000
 DestroymapButton.TextWrapped = true
 
-UICorner_12.Parent = DestroymapButton
+UICorner_9.Parent = DestroymapButton
 
 Other.Name = "Other"
 Other.Parent = MainPage
@@ -309,19 +257,19 @@ Other.ClipsDescendants = true
 Other.Position = UDim2.new(0.0538720526, 0, 0.531791806, 0)
 Other.Size = UDim2.new(0, 265, 0, 65)
 
-UICorner_13.Parent = Other
+UICorner_10.Parent = Other
 
-TextLabel_3.Parent = Other
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.Position = UDim2.new(0, 0, 0.291402489, 0)
-TextLabel_3.Size = UDim2.new(0, 265, 0, 26)
-TextLabel_3.Font = Enum.Font.GothamBlack
-TextLabel_3.Text = "Comming soon"
-TextLabel_3.TextColor3 = Color3.fromRGB(135, 135, 135)
-TextLabel_3.TextScaled = true
-TextLabel_3.TextSize = 14.000
-TextLabel_3.TextWrapped = true
+TextLabel_2.Parent = Other
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0, 0, 0.291402489, 0)
+TextLabel_2.Size = UDim2.new(0, 265, 0, 26)
+TextLabel_2.Font = Enum.Font.GothamBlack
+TextLabel_2.Text = "Comming soon"
+TextLabel_2.TextColor3 = Color3.fromRGB(135, 135, 135)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
 
 TeleportsPage.Name = "TeleportsPage"
 TeleportsPage.Parent = Pages
@@ -352,7 +300,7 @@ Stuff_3.ClipsDescendants = true
 Stuff_3.Position = UDim2.new(0.0269360263, 0, 0.254335254, 0)
 Stuff_3.Size = UDim2.new(0, 281, 0, 120)
 
-UICorner_14.Parent = Stuff_3
+UICorner_11.Parent = Stuff_3
 
 GOTO.Name = "GOTO"
 GOTO.Parent = Stuff_3
@@ -364,8 +312,8 @@ GOTO.Text = "Go To"
 GOTO.TextColor3 = Color3.fromRGB(255, 255, 255)
 GOTO.TextSize = 14.000
 
-UICorner_15.CornerRadius = UDim.new(0, 5)
-UICorner_15.Parent = GOTO
+UICorner_12.CornerRadius = UDim.new(0, 5)
+UICorner_12.Parent = GOTO
 
 AdminButton.Name = "AdminButton"
 AdminButton.Parent = Stuff_3
@@ -377,8 +325,8 @@ AdminButton.Text = "Admin"
 AdminButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 AdminButton.TextSize = 14.000
 
-UICorner_16.CornerRadius = UDim.new(0, 5)
-UICorner_16.Parent = AdminButton
+UICorner_13.CornerRadius = UDim.new(0, 5)
+UICorner_13.Parent = AdminButton
 
 BankButton.Name = "BankButton"
 BankButton.Parent = Stuff_3
@@ -390,8 +338,8 @@ BankButton.Text = "Bank"
 BankButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 BankButton.TextSize = 14.000
 
-UICorner_17.CornerRadius = UDim.new(0, 5)
-UICorner_17.Parent = BankButton
+UICorner_14.CornerRadius = UDim.new(0, 5)
+UICorner_14.Parent = BankButton
 
 BasketButton.Name = "BasketButton"
 BasketButton.Parent = Stuff_3
@@ -403,8 +351,8 @@ BasketButton.Text = "Basket"
 BasketButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 BasketButton.TextSize = 14.000
 
-UICorner_18.CornerRadius = UDim.new(0, 5)
-UICorner_18.Parent = BasketButton
+UICorner_15.CornerRadius = UDim.new(0, 5)
+UICorner_15.Parent = BasketButton
 
 SZButton.Name = "SZButton"
 SZButton.Parent = Stuff_3
@@ -416,8 +364,8 @@ SZButton.Text = "SZ3"
 SZButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 SZButton.TextSize = 14.000
 
-UICorner_19.CornerRadius = UDim.new(0, 5)
-UICorner_19.Parent = SZButton
+UICorner_16.CornerRadius = UDim.new(0, 5)
+UICorner_16.Parent = SZButton
 
 TextBox.Parent = Stuff_3
 TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -429,7 +377,7 @@ TextBox.Text = ""
 TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextBox.TextSize = 14.000
 
-UICorner_20.Parent = TextBox
+UICorner_17.Parent = TextBox
 
 TrainButton.Name = "TrainButton"
 TrainButton.Parent = Stuff_3
@@ -441,8 +389,8 @@ TrainButton.Text = "Train"
 TrainButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 TrainButton.TextSize = 14.000
 
-UICorner_21.CornerRadius = UDim.new(0, 5)
-UICorner_21.Parent = TrainButton
+UICorner_18.CornerRadius = UDim.new(0, 5)
+UICorner_18.Parent = TrainButton
 
 GraveButton.Name = "GraveButton"
 GraveButton.Parent = Stuff_3
@@ -454,8 +402,8 @@ GraveButton.Text = "Grave"
 GraveButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 GraveButton.TextSize = 14.000
 
-UICorner_22.CornerRadius = UDim.new(0, 5)
-UICorner_22.Parent = GraveButton
+UICorner_19.CornerRadius = UDim.new(0, 5)
+UICorner_19.Parent = GraveButton
 
 SellingPage.Name = "SellingPage"
 SellingPage.Parent = Pages
@@ -486,53 +434,40 @@ Stuff_4.ClipsDescendants = true
 Stuff_4.Position = UDim2.new(0.0269360263, 0, 0.254335254, 0)
 Stuff_4.Size = UDim2.new(0, 281, 0, 120)
 
-UICorner_23.Parent = Stuff_4
+UICorner_20.Parent = Stuff_4
 
 CashAuraButton.Name = "CashAuraButton"
 CashAuraButton.Parent = Stuff_4
 CashAuraButton.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-CashAuraButton.Position = UDim2.new(0.0284697507, 0, 0.0901960805, 0)
-CashAuraButton.Size = UDim2.new(0, 83, 0, 19)
+CashAuraButton.Position = UDim2.new(0.0284697507, 0, 0.0901961029, 0)
+CashAuraButton.Size = UDim2.new(0, 113, 0, 25)
 CashAuraButton.Font = Enum.Font.GothamBlack
 CashAuraButton.Text = "Cash Aura"
 CashAuraButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 CashAuraButton.TextSize = 14.000
 
-UICorner_24.CornerRadius = UDim.new(0, 5)
-UICorner_24.Parent = CashAuraButton
-
-AutodropButton.Name = "AutodropButton"
-AutodropButton.Parent = Stuff_4
-AutodropButton.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-AutodropButton.Position = UDim2.new(0.352313161, 0, 0.0901960805, 0)
-AutodropButton.Size = UDim2.new(0, 83, 0, 19)
-AutodropButton.Font = Enum.Font.GothamBlack
-AutodropButton.Text = "Autodrop"
-AutodropButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-AutodropButton.TextSize = 14.000
-
-UICorner_25.CornerRadius = UDim.new(0, 5)
-UICorner_25.Parent = AutodropButton
+UICorner_21.CornerRadius = UDim.new(0, 5)
+UICorner_21.Parent = CashAuraButton
 
 LoopdestroyButton.Name = "LoopdestroyButton"
 LoopdestroyButton.Parent = Stuff_4
 LoopdestroyButton.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-LoopdestroyButton.Position = UDim2.new(0.672597885, 0, 0.0901960805, 0)
-LoopdestroyButton.Size = UDim2.new(0, 83, 0, 19)
+LoopdestroyButton.Position = UDim2.new(0.568041384, 0, 0.0901961029, 0)
+LoopdestroyButton.Size = UDim2.new(0, 112, 0, 25)
 LoopdestroyButton.Font = Enum.Font.GothamBlack
 LoopdestroyButton.Text = "Loopdestroy"
 LoopdestroyButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 LoopdestroyButton.TextSize = 12.000
 
-UICorner_26.CornerRadius = UDim.new(0, 5)
-UICorner_26.Parent = LoopdestroyButton
+UICorner_22.CornerRadius = UDim.new(0, 5)
+UICorner_22.Parent = LoopdestroyButton
 
 CashCounter.Name = "CashCounter"
 CashCounter.Parent = Stuff_4
 CashCounter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 CashCounter.BackgroundTransparency = 1.000
-CashCounter.Position = UDim2.new(0.0284697507, 0, 0.758333325, 0)
-CashCounter.Size = UDim2.new(0, 264, 0, 22)
+CashCounter.Position = UDim2.new(0.099644132, 0, 0.785416663, 0)
+CashCounter.Size = UDim2.new(0, 225, 0, 18)
 CashCounter.Font = Enum.Font.GothamBlack
 CashCounter.Text = "$1,464,123"
 CashCounter.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -542,8 +477,8 @@ MoneyDropped.Name = "MoneyDropped"
 MoneyDropped.Parent = Stuff_4
 MoneyDropped.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 MoneyDropped.BackgroundTransparency = 1.000
-MoneyDropped.Position = UDim2.new(0.0284697507, 0, 0.574999988, 0)
-MoneyDropped.Size = UDim2.new(0, 264, 0, 22)
+MoneyDropped.Position = UDim2.new(0.167259783, 0, 0.636805475, 0)
+MoneyDropped.Size = UDim2.new(0, 187, 0, 15)
 MoneyDropped.Font = Enum.Font.GothamBlack
 MoneyDropped.Text = "Money Dropped:"
 MoneyDropped.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -552,28 +487,28 @@ MoneyDropped.TextSize = 14.000
 LowGFX.Name = "LowGFX"
 LowGFX.Parent = Stuff_4
 LowGFX.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-LowGFX.Position = UDim2.new(0.188612103, 0, 0.298529416, 0)
-LowGFX.Size = UDim2.new(0, 83, 0, 19)
+LowGFX.Position = UDim2.new(0.0284697507, 0, 0.365196109, 0)
+LowGFX.Size = UDim2.new(0, 113, 0, 25)
 LowGFX.Font = Enum.Font.GothamBlack
 LowGFX.Text = "Low GFX"
 LowGFX.TextColor3 = Color3.fromRGB(255, 255, 255)
 LowGFX.TextSize = 14.000
 
-UICorner_27.CornerRadius = UDim.new(0, 5)
-UICorner_27.Parent = LowGFX
+UICorner_23.CornerRadius = UDim.new(0, 5)
+UICorner_23.Parent = LowGFX
 
 CrashButton.Name = "CrashButton"
 CrashButton.Parent = Stuff_4
 CrashButton.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-CrashButton.Position = UDim2.new(0.512455523, 0, 0.298529416, 0)
-CrashButton.Size = UDim2.new(0, 83, 0, 19)
+CrashButton.Position = UDim2.new(0.568041384, 0, 0.365196228, 0)
+CrashButton.Size = UDim2.new(0, 112, 0, 24)
 CrashButton.Font = Enum.Font.GothamBlack
 CrashButton.Text = "Crash"
 CrashButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 CrashButton.TextSize = 14.000
 
-UICorner_28.CornerRadius = UDim.new(0, 5)
-UICorner_28.Parent = CrashButton
+UICorner_24.CornerRadius = UDim.new(0, 5)
+UICorner_24.Parent = CrashButton
 
 Sidebar.Name = "Sidebar"
 Sidebar.Parent = MainFrame
@@ -581,7 +516,7 @@ Sidebar.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 Sidebar.Position = UDim2.new(-0.148050636, 0, 0.00667825341, 0)
 Sidebar.Size = UDim2.new(0, 36, 0, 173)
 
-UICorner_29.Parent = Sidebar
+UICorner_25.Parent = Sidebar
 
 HomeButton.Name = "HomeButton"
 HomeButton.Parent = Sidebar
@@ -619,8 +554,8 @@ SellingButton.Image = "rbxassetid://2246496691"
 
 -- Scripts:
 
-local function UBKRYU_fake_script() -- BiwareSellersGUI.Toggle 
-	local script = Instance.new('LocalScript', BiwareSellersGUI)
+local function YRBUVBK_fake_script() -- NJASbiasbdkaD.Toggle 
+	local script = Instance.new('LocalScript', NJASbiasbdkaD)
 
 	local frame = script.Parent.MainFrame
 	local hotkey = Enum.KeyCode.V
@@ -645,9 +580,9 @@ local function UBKRYU_fake_script() -- BiwareSellersGUI.Toggle
 	end)
 	
 end
-coroutine.wrap(UBKRYU_fake_script)()
-local function DCRYSJ_fake_script() -- BiwareSellersGUI.antiafk 
-	local script = Instance.new('LocalScript', BiwareSellersGUI)
+coroutine.wrap(YRBUVBK_fake_script)()
+local function SNDW_fake_script() -- NJASbiasbdkaD.antiafk 
+	local script = Instance.new('LocalScript', NJASbiasbdkaD)
 
 	local VirtualUser=game:service'VirtualUser'
 	game:service'Players'.LocalPlayer.Idled:connect(function()
@@ -657,22 +592,14 @@ local function DCRYSJ_fake_script() -- BiwareSellersGUI.antiafk
 	
 	print("Anti-Afk is Loaded")
 end
-coroutine.wrap(DCRYSJ_fake_script)()
-local function XJNZY_fake_script() -- BiwareSellersGUI.LocalScript 
-	local script = Instance.new('LocalScript', BiwareSellersGUI)
+coroutine.wrap(SNDW_fake_script)()
+local function DTSRZL_fake_script() -- NJASbiasbdkaD.LocalScript 
+	local script = Instance.new('LocalScript', NJASbiasbdkaD)
 
 	print("Script loaded sucessfully!")
 end
-coroutine.wrap(XJNZY_fake_script)()
-local function PDJF_fake_script() -- TextButton.LocalScript 
-	local script = Instance.new('LocalScript', TextButton)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent:Destroy()
-	end)
-end
-coroutine.wrap(PDJF_fake_script)()
-local function MLODEJJ_fake_script() -- Viewport.LocalScript 
+coroutine.wrap(DTSRZL_fake_script)()
+local function LGUWJL_fake_script() -- Viewport.LocalScript 
 	local script = Instance.new('LocalScript', Viewport)
 
 	local player = game.Players.LocalPlayer
@@ -682,8 +609,8 @@ local function MLODEJJ_fake_script() -- Viewport.LocalScript
 		image.Image = game.Players:GetUserThumbnailAsync(player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size352x352)
 	end
 end
-coroutine.wrap(MLODEJJ_fake_script)()
-local function RNCB_fake_script() -- Username.LocalScript 
+coroutine.wrap(LGUWJL_fake_script)()
+local function TUBH_fake_script() -- Username.LocalScript 
 	local script = Instance.new('LocalScript', Username)
 
 	local text = script.Parent
@@ -692,8 +619,8 @@ local function RNCB_fake_script() -- Username.LocalScript
 		text.Text = "Welcome, "..game:GetService("Players").LocalPlayer.Name
 	end
 end
-coroutine.wrap(RNCB_fake_script)()
-local function UAIUTT_fake_script() -- CopyDiscord.LocalScript 
+coroutine.wrap(TUBH_fake_script)()
+local function VRPVXF_fake_script() -- CopyDiscord.LocalScript 
 	local script = Instance.new('LocalScript', CopyDiscord)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -701,8 +628,8 @@ local function UAIUTT_fake_script() -- CopyDiscord.LocalScript
 		setclipboard("https://discord.gg/gGbq6jGjAS")
 	end)
 end
-coroutine.wrap(UAIUTT_fake_script)()
-local function PZEHY_fake_script() -- CopyGroup.LocalScript 
+coroutine.wrap(VRPVXF_fake_script)()
+local function MXCG_fake_script() -- CopyGroup.LocalScript 
 	local script = Instance.new('LocalScript', CopyGroup)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -710,8 +637,8 @@ local function PZEHY_fake_script() -- CopyGroup.LocalScript
 		setclipboard("https://www.roblox.com/groups/15256532/Biware-Control#!/about")
 	end)
 end
-coroutine.wrap(PZEHY_fake_script)()
-local function AXDEG_fake_script() -- FlyButton.LocalScript 
+coroutine.wrap(MXCG_fake_script)()
+local function NEVPOG_fake_script() -- FlyButton.LocalScript 
 	local script = Instance.new('LocalScript', FlyButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -719,8 +646,8 @@ local function AXDEG_fake_script() -- FlyButton.LocalScript
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/imlukii/BiwareScripts/main/ShazamFly', true))()
 	end)
 end
-coroutine.wrap(AXDEG_fake_script)()
-local function MJISAUE_fake_script() -- DestroymapButton.LocalScript 
+coroutine.wrap(NEVPOG_fake_script)()
+local function SZGVISM_fake_script() -- DestroymapButton.LocalScript 
 	local script = Instance.new('LocalScript', DestroymapButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1046,8 +973,8 @@ local function MJISAUE_fake_script() -- DestroymapButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(MJISAUE_fake_script)()
-local function RXDRTJ_fake_script() -- GOTO.LocalScript 
+coroutine.wrap(SZGVISM_fake_script)()
+local function CNHJ_fake_script() -- GOTO.LocalScript 
 	local script = Instance.new('LocalScript', GOTO)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1058,8 +985,8 @@ local function RXDRTJ_fake_script() -- GOTO.LocalScript
 		print("Teleported to "..p2.."")
 	end)
 end
-coroutine.wrap(RXDRTJ_fake_script)()
-local function CXKBVG_fake_script() -- AdminButton.LocalScript 
+coroutine.wrap(CNHJ_fake_script)()
+local function QERS_fake_script() -- AdminButton.LocalScript 
 	local script = Instance.new('LocalScript', AdminButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1067,8 +994,8 @@ local function CXKBVG_fake_script() -- AdminButton.LocalScript
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-872.03, -38.3992, -585.26)
 	end)
 end
-coroutine.wrap(CXKBVG_fake_script)()
-local function GCWCK_fake_script() -- BankButton.LocalScript 
+coroutine.wrap(QERS_fake_script)()
+local function MSJJB_fake_script() -- BankButton.LocalScript 
 	local script = Instance.new('LocalScript', BankButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1076,8 +1003,8 @@ local function GCWCK_fake_script() -- BankButton.LocalScript
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402.433, 21.75, -286.213)
 	end)
 end
-coroutine.wrap(GCWCK_fake_script)()
-local function OIISBM_fake_script() -- BasketButton.LocalScript 
+coroutine.wrap(MSJJB_fake_script)()
+local function VACL_fake_script() -- BasketButton.LocalScript 
 	local script = Instance.new('LocalScript', BasketButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1085,8 +1012,8 @@ local function OIISBM_fake_script() -- BasketButton.LocalScript
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-932.03, 22.0998, -482.54)
 	end)
 end
-coroutine.wrap(OIISBM_fake_script)()
-local function WUQSZ_fake_script() -- SZButton.LocalScript 
+coroutine.wrap(VACL_fake_script)()
+local function NHNZM_fake_script() -- SZButton.LocalScript 
 	local script = Instance.new('LocalScript', SZButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1094,8 +1021,8 @@ local function WUQSZ_fake_script() -- SZButton.LocalScript
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3.58, 11.75, 200.03)
 	end)
 end
-coroutine.wrap(WUQSZ_fake_script)()
-local function MDGDKZ_fake_script() -- TrainButton.LocalScript 
+coroutine.wrap(NHNZM_fake_script)()
+local function IWYR_fake_script() -- TrainButton.LocalScript 
 	local script = Instance.new('LocalScript', TrainButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1103,8 +1030,8 @@ local function MDGDKZ_fake_script() -- TrainButton.LocalScript
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(595.815, 48, -113.703)
 	end)
 end
-coroutine.wrap(MDGDKZ_fake_script)()
-local function USTWE_fake_script() -- GraveButton.LocalScript 
+coroutine.wrap(IWYR_fake_script)()
+local function IDBYAKG_fake_script() -- GraveButton.LocalScript 
 	local script = Instance.new('LocalScript', GraveButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1112,8 +1039,8 @@ local function USTWE_fake_script() -- GraveButton.LocalScript
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(177.885, 21.75, 55.1252)
 	end)
 end
-coroutine.wrap(USTWE_fake_script)()
-local function XDYIVZB_fake_script() -- CashAuraButton.LocalScript 
+coroutine.wrap(IDBYAKG_fake_script)()
+local function ASJAUHL_fake_script() -- CashAuraButton.LocalScript 
 	local script = Instance.new('LocalScript', CashAuraButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1121,37 +1048,8 @@ local function XDYIVZB_fake_script() -- CashAuraButton.LocalScript
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/imlukii/BiwareScripts/main/CashAura', true))()
 	end)
 end
-coroutine.wrap(XDYIVZB_fake_script)()
-local function CMGXTQZ_fake_script() -- AutodropButton.LocalScript 
-	local script = Instance.new('LocalScript', AutodropButton)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		print('Autodrop Loaded.')
-		local IsDropping = false
-		
-		if IsDropping == false then
-			IsDropping = true
-		end
-		
-		if IsDropping == true then
-			IsDropping = false
-		end
-		
-		while IsDropping == true do
-			for i=1, 8e312 do
-				if IsDropping == false then
-					break
-				end
-				if IsDropping == true then
-					game:GetService("ReplicatedStorage").MainEvent:FireServer('DropMoney', '10000')
-					wait(15)
-				end
-			end
-		end
-	end)
-end
-coroutine.wrap(CMGXTQZ_fake_script)()
-local function ETLAWYC_fake_script() -- LoopdestroyButton.LocalScript 
+coroutine.wrap(ASJAUHL_fake_script)()
+local function AQKNZM_fake_script() -- LoopdestroyButton.LocalScript 
 	local script = Instance.new('LocalScript', LoopdestroyButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1167,8 +1065,8 @@ local function ETLAWYC_fake_script() -- LoopdestroyButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ETLAWYC_fake_script)()
-local function FPATFVE_fake_script() -- CashCounter.LocalScript 
+coroutine.wrap(AQKNZM_fake_script)()
+local function UJTAFX_fake_script() -- CashCounter.LocalScript 
 	local script = Instance.new('LocalScript', CashCounter)
 
 	while wait() do
@@ -1192,8 +1090,8 @@ local function FPATFVE_fake_script() -- CashCounter.LocalScript
 		end)
 	end
 end
-coroutine.wrap(FPATFVE_fake_script)()
-local function FXMRX_fake_script() -- LowGFX.LocalScript 
+coroutine.wrap(UJTAFX_fake_script)()
+local function KVZDR_fake_script() -- LowGFX.LocalScript 
 	local script = Instance.new('LocalScript', LowGFX)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1201,8 +1099,8 @@ local function FXMRX_fake_script() -- LowGFX.LocalScript
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/W9K/roblox-scripts/main/fpsshit.lua'))()
 	end)
 end
-coroutine.wrap(FXMRX_fake_script)()
-local function TOSG_fake_script() -- CrashButton.LocalScript 
+coroutine.wrap(KVZDR_fake_script)()
+local function VHCODA_fake_script() -- CrashButton.LocalScript 
 	local script = Instance.new('LocalScript', CrashButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1210,8 +1108,8 @@ local function TOSG_fake_script() -- CrashButton.LocalScript
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/BetterDaHood/BetterDaHoodCrasher/main/Crash'))()
 	end)
 end
-coroutine.wrap(TOSG_fake_script)()
-local function HJSVO_fake_script() -- HomeButton.LocalScript 
+coroutine.wrap(VHCODA_fake_script)()
+local function YNTNM_fake_script() -- HomeButton.LocalScript 
 	local script = Instance.new('LocalScript', HomeButton)
 
 	local player = game.Players.LocalPlayer
@@ -1232,8 +1130,8 @@ local function HJSVO_fake_script() -- HomeButton.LocalScript
 		Selling.Visible = false
 	end)
 end
-coroutine.wrap(HJSVO_fake_script)()
-local function UZGVLY_fake_script() -- MainButton.LocalScript 
+coroutine.wrap(YNTNM_fake_script)()
+local function EOVZMVY_fake_script() -- MainButton.LocalScript 
 	local script = Instance.new('LocalScript', MainButton)
 
 	local player = game.Players.LocalPlayer
@@ -1254,8 +1152,8 @@ local function UZGVLY_fake_script() -- MainButton.LocalScript
 		Selling.Visible = false
 	end)
 end
-coroutine.wrap(UZGVLY_fake_script)()
-local function AKTUI_fake_script() -- TeleportsButton.LocalScript 
+coroutine.wrap(EOVZMVY_fake_script)()
+local function UCOCSEA_fake_script() -- TeleportsButton.LocalScript 
 	local script = Instance.new('LocalScript', TeleportsButton)
 
 	local player = game.Players.LocalPlayer
@@ -1276,8 +1174,8 @@ local function AKTUI_fake_script() -- TeleportsButton.LocalScript
 		Selling.Visible = false
 	end)
 end
-coroutine.wrap(AKTUI_fake_script)()
-local function FETLI_fake_script() -- SellingButton.LocalScript 
+coroutine.wrap(UCOCSEA_fake_script)()
+local function RGZCETR_fake_script() -- SellingButton.LocalScript 
 	local script = Instance.new('LocalScript', SellingButton)
 
 	local player = game.Players.LocalPlayer
@@ -1298,4 +1196,4 @@ local function FETLI_fake_script() -- SellingButton.LocalScript
 		Selling.Visible = true
 	end)
 end
-coroutine.wrap(FETLI_fake_script)()
+coroutine.wrap(RGZCETR_fake_script)()
