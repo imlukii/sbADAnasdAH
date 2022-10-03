@@ -1,4 +1,4 @@
--- Instances:
+-- Variables
 
 local NJASbiasbdkaD = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
@@ -69,7 +69,7 @@ local MainButton = Instance.new("ImageButton")
 local TeleportsButton = Instance.new("ImageButton")
 local SellingButton = Instance.new("ImageButton")
 
---Properties:
+--Properties
 
 NJASbiasbdkaD.Name = "NJASbiasbdkaD"
 NJASbiasbdkaD.Parent = game.CoreGui
@@ -552,7 +552,7 @@ SellingButton.Position = UDim2.new(0.0833333358, 0, 0.728323638, 0)
 SellingButton.Size = UDim2.new(0, 29, 0, 29)
 SellingButton.Image = "rbxassetid://2246496691"
 
--- Scripts:
+-- Functions
 
 local function YRBUVBK_fake_script() -- NJASbiasbdkaD.Toggle 
 	local script = Instance.new('LocalScript', NJASbiasbdkaD)
@@ -616,7 +616,7 @@ local function TUBH_fake_script() -- Username.LocalScript
 	local text = script.Parent
 	
 	while wait() do
-		text.Text = "Welcome, "..game:GetService("Players").LocalPlayer.Name
+		text.Text = "Aloha, "..game:GetService("Players").LocalPlayer.Name
 	end
 end
 coroutine.wrap(TUBH_fake_script)()
